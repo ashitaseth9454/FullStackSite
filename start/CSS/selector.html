@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+
+        /*1.TYPE SELECTOR*/
+        /*same css baaki tags pe bhi use karna hai to comma laga ke use karenge*/
+        p, h2{
+            color:teal;
+        }
+        h1{
+            color: tomato;
+        }
+        /*2.UNIVERSAL SELECTOR -jitne bhi tegs hain sbpe apply ho jayegi*/
+        /*{
+            font-size: 20px;
+            /*saare tags including h1 and h2 20 px ke ho jayenge*/
+            /* ctrl+shift+I se inspect khuleg auspe ctrl+shift+c se aagr kisi bhi text pe hovee karenhgfe to uske baare ,main info aaajyegi}*/
+        /*3.DESCENDENT SELECTOR - div vale jitne bhi honge uske honge unke p vale element main change kardega*/
+        div p{
+            color: yellowgreen;
+    
+        }
+        div h1{
+            background-color: black;
+        }
+        /*CHILD SELECTOR-same as descendent...*/
+        div > p{
+            /*esa paragraph jo div  ke DIRECT CHILD hain...div ke immediately andar*/
+            background-color: seashell;
+            /* first vaale main change ho jayega kyuki child nahi hai dirct chile vo ab blockquote ka child hai na ki div ka isiliy euspe apply nahi hogi ye properties immediateky andar honi chahiye*/
+
+        }
+        /*CLASS SELECTOR--grouping tags*/
+        .class1{
+            background-color: pink;
+            
+        }
+        .class3{
+            color: yellowgreen;
+            
+        }
+        /*ATTRIBUTE SELECTOR--kisi attribut rpe lagan ahai*/
+        h2[lang]{
+            text-shadow: 2px,2px,5px, blue;
+        }
+
+        
+
+        /*ID SELCTION--selective cheez ke upar css*/
+        #para4{
+            color: pink;
+        }
+</style>
+
+
+</head>
+<body>
+    <div  class="class1">
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <blockquote><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id rerum, consequatur officia repudiandae odit laboriosam delectus magni maxime laudantium perspiciatis ullam veritatis hic qui, deserunt modi illum pariatur, eum porro eligendi explicabo laborum aperiam voluptas. Eaque magni provident earum rerum libero fugit quis esse eum eos voluptatem, doloribus tempora!</p>
+    </blockquote>
+    </div> 
+      <div  class="class1">
+        <h1>This is heading 1</h1>
+        <h2 >This is heading 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id rerum, consequatur officia repudiandae odit laboriosam delectus magni maxime laudantium perspiciatis ullam veritatis hic qui, deserunt modi illum pariatur, eum porro eligendi explicabo laborum aperiam voluptas. Eaque magni provident earum rerum libero fugit quis esse eum eos voluptatem, doloribus tempora!</p>
+    </div>
+    <div>  class="class1" 
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <p lang="fr"></p>>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id rerum, consequatur officia repudiandae odit laboriosam delectus magni maxime laudantium perspiciatis ullam veritatis hic qui, deserunt modi illum pariatur, eum porro eligendi explicabo laborum aperiam voluptas. Eaque magni provident earum rerum libero fugit quis esse eum eos voluptatem, doloribus tempora!</p>
+    </div>
+    <div>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id rerum, consequatur officia repudiandae odit laboriosam delectus magni maxime laudantium perspiciatis ullam veritatis hic qui, deserunt modi illum pariatur, eum porro eligendi explicabo laborum aperiam voluptas. Eaque magni provident earum rerum libero fugit quis esse eum eos voluptatem, doloribus tempora!</p>
+    </div>
+    <p id="para4" lang="fr">
+        yoooo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, laudantium modi ab explicabo sequi soluta qui commodi voluptas cupiditate non, dolore, earum accusamus iusto quod deleniti totam velit molestias? Tempora?
+    </p>
+    <h2 class="class3" lang="fr">yoooooooooooos</h2>
+    
+</body>
+</html>
