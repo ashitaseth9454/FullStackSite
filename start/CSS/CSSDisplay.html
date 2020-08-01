@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        p{
+            border:  2px solid pink;
+            /*display: inline;*//*ye saare inline elements ban gaye ain span tag saari lines pe lagega*/
+            /*display: block;*/
+            /*display: inline-block ;*/
+        }
+        #para1{
+            display: inline;
+            text-align: center;
+        }
+        #span1{
+            display: inline-block;
+            margin: 1px;
+            padding: 2px;
+           /* height: 200px;*//*doesn't work on inline tags*/
+            width: 300px;
+            background-color: hotpink;
+            text-align: center;
+                    
+         }
+         #button{
+             background-color: hotpink;
+                        
+        }
+         #button:hover{
+             color: indigo;
+             background-color: indigo;  
+         }
+         span.box{
+             
+
+         }
+    </style>
+</head>
+<body>
+    <span id="span1";>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente aliquid dolorum distinctio et dicta vitae voluptatibus voluptatem corporis illo, reprehenderit labore architecto eius sunt ipsa nulla quis animi. Ab magnam tempora nisi! Quos atque dolores fugit rerum hic earum aspernatur voluptatum beatae harum aut. Ratione error nostrum provident animi quas.</p>
+    
+
+    <p>Hellow World</p>
+    <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aliquam obcaecati ratione, consequatur veniam excepturi ullam accusantium delectus id ducimus!</p>
+    <a id="button" href="google.com">yooooo</a>
+</span>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /*content ki width jitna border ka rectangleban jayega*/
+            border: 2px solid pink;
+            width: 400px;    /*content 400px width ke ndar aa jayeg multiple lines main*/
+            height: 300px;/*agar height kam kardi to content bahar chala jaayega-overflow condition*/
+            /*overflow: hidden;*/ /*jo extra content bahar nikal rahahai box ke vo hat jayega*/
+            overflow: scroll;  /*box ke andar scroll */
+        }
+        .container1{
+            border: solid 2px pink;
+            width: 300px;
+            min-width: 330px;  /*responsiveness minimum 330px tak chota hoga and max 990px tak hoga*/
+            max-width: 990px;   /* VERY IMPORTANT------iniline tags pe kabhibhi height aur width nahi lagti hai*/
+
+        }
+        img{
+                width: 100%;
+            }
+         b{
+             /*inine tags pe kabhi bhi height aur width mahi lagti*/
+
+            }
+        span{
+            display: block;/* hmne block lga diya hai isiliye ab iski height and width change kar skte hain*/
+            height: 200px;
+            width: 200px;
+            background-color: seagreen;
+            height: 40px;/*height and width change nahi kar skte hain*/
+
+        }
+        
+    </style>
+</head>
+<body>
+    <b>yoooooo</b>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quo vel saepe aliquid, maiores perspiciatis illum eos dolor nisi quam, vitae ea officia deleniti, rem suscipit ipsum molestiae culpa quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum vero accusantium. Rerum, veniam non. Tenetur nostrum ipsam amet placeat incidunt, quisquam ut nobis odio cum debitis officia doloremque dolorem ipsum, omnis eos alias. Animi sit nesciunt at est pariatur fugit eveniet in quis officia! Consectetur aliquam delectus sed obcaecati. Fugiat libero ex facere vel magnam molestias ipsa cum distinctio molestiae voluptates, perferendis harum, blanditiis quaerat error doloribus beatae aliquid praesentium eius et nisi debitis sequi rem odit eos. Sed recusandae id minima assumenda obcaecati nam eos et? Eveniet dolorum iure reiciendis assumenda expedita ipsam ad asperiores deserunt id nisi!</p>
+
+    </div>
+    <div class="container1">
+        <img src="../Images/2dhgj.png" width="100%"> <!--image width karne SE BOX ke andar aa jayegi image-->
+        <p>Lorem ipsum <span style="color: rosybrown;" >dolor sit </span>amet consectetur adipisicing elit. Beatae quo vel saepe aliquid, maiores perspiciatis illum eos dolor nisi quam, vitae ea officia deleniti, rem suscipit ipsum molestiae culpa quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum vero accusantium. Rerum, veniam non. Tenetur nostrum ipsam amet placeat incidunt, quisquam ut nobis odio cum debitis officia doloremque dolorem ipsum, omnis eos alias. Animi sit nesciunt at est pariatur fugit eveniet in quis officia! Consectetur aliquam delectus sed obcaecati. Fugiat libero ex facere vel magnam molestias ipsa cum distinctio molestiae voluptates, perferendis harum, blanditiis quaerat error doloribus beatae aliquid praesentium eius et nisi debitis sequi rem odit eos. Sed recusandae id minima assumenda obcaecati nam eos et? Eveniet dolorum iure reiciendis assumenda expedita ipsam ad asperiores deserunt id nisi!</p>
+
+    </div>
+</body>
+</html>
