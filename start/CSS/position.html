@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: chartreuse;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .main{
+            width: 600px;
+            height: 400px;
+            background-color: cornflowerblue;
+            overflow: scroll;
+            position: sticky;
+            top: 0;/*jaise hi top ayega vah astick ho jayega aiur sroll karte karte scroll hoga top pe rehke hi*/
+        }
+        body{
+            height: 5000px;
+        }
+        
+        .box{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        #box1{
+            background-color: crimson;
+            z-index: 1;/*laywrs jaisa hoga jisko upar show karna hai uspe index dedo jiska bada index number vo upar i.e. z-ondex 1 is below z-index 2 vala element*/
+           
+        }
+        #box2{
+            background-color: cyan;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+        #box3{
+            background-color: darkgrey;
+            top: 40px;
+            left: 40px;
+            z-index: 3;
+        }
+        .main img{
+            width: 300px;
+            height: 200px;
+            /*position: relative;
+            left: 150px;/*left se 150px shift ho jayega*/
+             position: fixed;/*scroll karoge to bhi fix rHEGI IMG*/
+             right: 0px;   
+
+        }
+        .main h1{
+            /*margin-top: 100px;*/
+            /*position: relative;
+            top: 10px;    apni initial position se move karega top se 10px*/
+            position: absolute;/* agar posituon of parent relativen nahi hai to kahi bhi ghoom ksta hai aur jab relative ho to usii me rahega,,ab ye div ka parn nahi rahega is mainke liye h1 exist nahi karega ab*/
+        }
+        .main p{
+            position: relative;
+            top: 100px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>hello</h1>
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illum ipsa quas totam nam, iusto consequatur quisquam optio quia sit minima tempore voluptatibus doloremque facere exercitationem quaerat incidunt accusantium dicta itaque, nobis sapiente? Quod voluptatibus corrupti soluta esse? Consequatur voluptas laboriosam, eligendi aspernatur impedit temporibus libero rerum eaque velit, vero repellat ipsa perferendis voluptatibus ab esse iusto a nam fugiat ipsam officiis. Libero sed animi mollitia veritatis tenetur eius eligendi maiores aliquid nihil natus voluptas labore provident necessitatibus alias eaque consectetur veniam, dolor unde est id culpa voluptatibus ut sint quia! Illum quidem deleniti quibusdam distinctio expedita nulla deserunt explicabo!</p>
+           <!-- <img src="../Images/2dhgj.png" >-->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            list-style: upper-alpha;
+        }
+        ul{
+            list-style-type: square;
+            padding-left: 20px;  /*indentation ke liye*/
+            list-style: none;  /*removing bullets*/
+            /*sirf bullets ka colour change is not possible*/
+            /*list-style-image: url(../Images/2dhgj.png);
+        */
+        }
+        li::before{
+            content: '#';
+            color: blueviolet;
+        }/*adding content before list items so they look like coloured bullets and using list-style: none*/
+        li::after{
+            content: 'hell';  /*we cannon select this text on the webpage as it is dynamic textkuch bhi select karoge lekin ye hell select nahi hoga*/
+        }
+    </style>
+</head>
+<body>
+    <!--1.Unordered Lists-->
+    <h2>Unordered Lists</h2>
+    <hr>
+    <h3>Web Technologies</h3>
+    <ul>
+        <li>hello</li><!--list items-li-->
+        <li> hii</li>
+        <li>bye</li>
+        <li> anyong</li>
+
+
+
+    </ul><!--ul-unordered list0-->
+    <ol start="26">
+        <li>anyooong</li>
+        <li>anyinaseool</li>
+        <li>kamsaamida</li>
+    </ol>
+    
+    <dl>
+        <dt><b><u>description</u></b></dt>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio debitis aliquam nihil possimus dolorum officiis excepturi provident tempore reiciendis minus!</dd>
+    </dl><!--dl-description/defination list-->
+    <ul>
+        <li>yooo</li>
+        <ol>
+            <li>btch</li>
+        </ol>
+        </ul>
+</body>
+</html>
