@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+
+            padding: 0;
+            margin: 0;
+        }
+
+        /*1201 or more
+           1025-1200
+           769-1024
+           481-768
+           <480*/
+
+        /*BREAK POINT 1*/
+
+        @media (min-width: 1446px) {
+
+            h1 {
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: white;
+                
+                background-color: crimson;
+            }
+
+            .header ul {
+
+                width: 100%;
+                height: 50px;
+                background-color: crimson;
+                color: white;
+                padding: 10px;
+                margin: 5px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                top: 0;
+                position: fixed;
+                justify-content: space-evenly;
+
+            }
+
+
+            .header ul li {
+                padding: 5px;
+                text-decoration: none;
+                list-style: none;
+                display: inline-block;
+            }
+
+            .header ul li a {
+                display: block;
+
+                text-decoration: none;
+                padding: 5px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 25px;
+                color: white;
+
+            }
+
+            .header ul li a:hover {
+                color: crimson;
+                background-color: white;
+                padding: 5px;
+
+
+            }
+
+            .banner {
+                width: 100%;
+                height: 800px;
+                padding: 10px;
+                background-color: teal;
+                color: white;
+                margin: 5px;
+            }
+
+            .circle {
+                width: 100%;
+                height: 300PX;
+                padding: 10px;
+            }
+
+            .circle>div {
+                /*border: tomato 2px solid;*/
+                padding: 10px;
+                height: 250px;
+                width: 250px;
+                border-radius: 50%;
+                float: left;
+                margin-left: 45px;
+                margin-right: 45px;
+                background-color: tomato;
+
+            }
+
+            #but1 {
+                background-color: white;
+                color: crimson;
+                padding: 10px;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin: 2px;
+                text-decoration: none;
+                border-radius: 12px;
+            }
+
+
+            .box {
+                width: 100%;
+                height: 500PX;
+                padding: 10px;
+
+            }
+
+            .box>div {
+                width: 250px;
+                height: 400px;
+                background-color: rgb(255, 66, 98);
+                float: left;
+                padding: 10px;
+                margin-left: 45px;
+                margin-right: 45px;
+
+            }
+
+            .box div img {
+                width: 100%;
+            }
+
+            .box div p {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            .article {
+                width: 100%;
+                height: 500px;
+                padding: 10px;
+            }
+
+            #a1 {
+                width: 49%;
+                height: 490px;
+                background-color: paleturquoise;
+                float: left;
+
+            }
+            #a1 p, #a1 h3{
+                text-align: justify;
+                padding: 20px;
+            }
+
+
+            #a2 {
+                width: 49%;
+                height: 140px;
+                background-color: blue;
+                margin: 6px;
+                float: right;
+            }
+
+            .footer {
+                margin-top: 20px;
+                display: flex;
+                width: 100%;
+                height: 60px;
+                background-color: crimson;
+                color: white;
+                padding: 10px;
+                justify-content: center;
+
+            }
+
+            .footer a {
+                background-color: white;
+                color: crimson;
+                padding: 10px;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin: 2px;
+                text-decoration: none;
+                border-radius: 12px;
+            }
+        }
+
+        /*BREAKPOINT -2*/
+
+        @media (min-width: 1130px)and ( max-width: 1445px){
+            h1 {
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: white;
+                background-color: crimson;
+            }
+
+            .header ul {
+
+                width: 100%;
+                height: 50px;
+                background-color: crimson;
+                color: white;
+                padding: 10px;
+                margin: 5px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                top: 0;
+                position: fixed;
+                justify-content: space-evenly;
+
+            }
+
+
+            .header ul li {
+                padding: 5px;
+                text-decoration: none;
+                list-style: none;
+                display: inline-block;
+            }
+
+            .header ul li a {
+                display: block;
+
+                text-decoration: none;
+                padding: 5px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 25px;
+                color: white;
+
+            }
+
+            .header ul li a:hover {
+                color: crimson;
+                background-color: white;
+                padding: 5px;
+
+
+            }
+
+            .banner {
+                width: 100%;
+                height: 800px;
+                padding: 10px;
+                background-color: teal;
+                color: white;
+                margin: 5px;
+            }
+
+            .circle {
+                width: 100%;
+                height: 1000PX;
+                padding: 10px;
+            }
+
+            .circle>div {
+                /*border: tomato 2px solid;*/
+                padding: 10px;
+                height: 450px;
+                width: 450px;
+                border-radius: 50%;
+                
+                margin-left: 45px;
+                margin-right: 45px;
+                background-color: tomato;
+                margin-top: 8px;
+                margin-bottom: 8px;
+
+            }
+            .circle1{
+                float: left;
+            }
+            .circle2{
+                float: left;
+            }
+
+            #but1 {
+                background-color: white;
+                color: crimson;
+                padding: 10px;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin: 2px;
+                text-decoration: none;
+                border-radius: 12px;
+            }
+
+
+            .box {
+                width: 100%;
+                height: 1000PX;
+                padding: 10px;
+                justify-content: space-evenly;
+
+            }
+
+            .box>div {
+                width: 400px;
+                height: 450px;
+                background-color: rgb(255, 66, 98);
+                float: left;
+                padding: 10px;
+                margin-left: 45px;
+                margin-right: 45px;
+                margin-bottom: 10px;
+
+            }
+
+            .box div img {
+                width: 100%;
+            }
+
+            .box div p {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            .article {
+                width: 100%;
+                height: 1000px;
+                padding: 10px;
+            }
+
+            #a1 {
+                width: 100%;
+                height: 450px;
+                background-color: paleturquoise;
+                margin: 10px;
+               
+
+            }
+            #a1 p, #a1 h3{
+                text-align: justify;
+                padding: 20px;
+            }
+
+
+            #a2 {
+                width: 100%;
+                height: 140px;
+                background-color: blue;
+                margin: 10px;
+               
+            }
+
+            .footer {
+                display: flex;
+                margin-top: 20px;
+                width: 100%;
+                height: 50px;
+                background-color: crimson;
+                color: white;
+                padding: 10px;
+                justify-content: center;
+
+            }
+
+            .footer a {
+                background-color: white;
+                color: crimson;
+                padding: 10px;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin: 2px;
+                text-decoration: none;
+                border-radius: 12px;
+            }
+        }
+
+        /*BREAKPOINT -3*/
+
+        @media(min-width: 1025px) and (max-width: 1129px){
+            h1 {
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: white;
+                background-color: crimson;
+            }
+
+            .header ul {
+
+                width: 100%;
+                height: 50px;
+                background-color: crimson;
+                color: white;
+                padding: 10px;
+                margin: 5px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                top: 0;
+                position: fixed;
+                justify-content: space-evenly;
+
+            }
+
+
+            .header ul li {
+                padding: 5px;
+                text-decoration: none;
+                list-style: none;
+                display: inline-block;
+            }
+
+            .header ul li a {
+                display: block;
+
+                text-decoration: none;
+                padding: 5px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 25px;
+                color: white;
+
+            }
+
+            .header ul li a:hover {
+                color: crimson;
+                background-color: white;
+                padding: 5px;
+
+
+            }
+
+            .banner {
+                width: 100%;
+                height: 800px;
+                padding: 10px;
+                background-color: teal;
+                color: white;
+                margin: 5px;
+            }
+
+            .circle {
+                width: 100%;
+                height: 1920PX;
+                padding: 10px;
+                
+            }
+
+            .circle>div {
+                /*border: tomato 2px solid;*/
+                padding: 10px;
+                height: 450px;
+                width: 450px;
+                border-radius: 50%;
+              
+                margin-left: 45px;
+                margin-right: 45px;
+                background-color: tomato;
+                margin-top: 8px;
+                margin-bottom: 8px;
+
+            }
+            
+
+            #but1 {
+                background-color: white;
+                color: crimson;
+                padding: 10px;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin: 2px;
+                text-decoration: none;
+                border-radius: 12px;
+            }
+
+
+            .box {
+                width: 100%;
+                height: 1000PX;
+                padding: 10px;
+                justify-content: space-evenly;
+
+            }
+
+            .box>div {
+                width: 400px;
+                height: 450px;
+                background-color: rgb(255, 66, 98);
+                float: left;
+                padding: 10px;
+                margin-left: 45px;
+                margin-right: 45px;
+                margin-bottom: 10px;
+
+            }
+
+            .box div img {
+                width: 100%;
+            }
+
+            .box div p {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            .article {
+                width: 100%;
+                height: 1000px;
+                padding: 10px;
+            }
+
+            #a1 {
+                width: 100%;
+                height: 450px;
+                background-color: paleturquoise;
+                margin: 10px;
+               
+
+            }
+            #a1 p, #a1 h3{
+                text-align: justify;
+                padding: 20px;
+            }
+
+
+            #a2 {
+                width: 100%;
+                height: 140px;
+                background-color: blue;
+                margin: 10px;
+               
+            }
+
+            .footer {
+                display: flex;
+                width: 100%;
+                height: 50px;
+                background-color: crimson;
+                color: white;
+                padding: 10px;
+                margin-top: 20px;
+                justify-content: center;
+
+            }
+
+            .footer a {
+                background-color: white;
+                color: crimson;
+                padding: 10px;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin: 2px;
+                text-decoration: none;
+                border-radius: 12px;
+            }
+        }
+
+        
+        /*BREAKPOINT -4*/
+
+        @media(min-width: 450px) and (max-width: 1024px){
+            h1 {
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: white;
+                background-color: crimson;
+            }
+
+            .header ul {
+
+                width: 100%;
+                height: 50px;
+                background-color: crimson;
+                color: white;
+                padding: 10px;
+                margin: 5px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                top: 0;
+                position: fixed;
+                justify-content: space-evenly;
+
+            }
+
+
+            .header ul li {
+                padding: 5px;
+                text-decoration: none;
+                list-style: none;
+                display: inline-block;
+            }
+
+            .header ul li a {
+                display: block;
+                font-size: 20px;
+                text-decoration: none;
+                padding: 5px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: white;
+                
+
+            }
+
+            .header ul li a:hover {
+                color: crimson;
+                background-color: white;
+                padding: 5px;
+
+
+            }
+
+            .banner {
+                width: 100%;
+                height: 800px;
+                padding: 10px;
+                background-color: teal;
+                color: white;
+                margin: 5px;
+            }
+
+            .circle {
+                width: 100%;
+                height: 1920PX;
+                padding: 10px;
+                
+            }
+
+            .circle>div {
+                /*border: tomato 2px solid;*/
+                padding: 10px;
+                height: 450px;
+                width: 450px;
+                border-radius: 50%;
+              
+                margin-left: 45px;
+                margin-right: 45px;
+                background-color: tomato;
+                margin-top: 8px;
+                margin-bottom: 8px;
+
+            }
+            
+
+            #but1 {
+                background-color: white;
+                color: crimson;
+                padding: 10px;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin: 2px;
+                text-decoration: none;
+                border-radius: 12px;
+            }
+
+
+            .box {
+                width: 100%;
+                height: 1920PX;
+                padding: 10px;
+                justify-content: space-evenly;
+
+            }
+
+            .box>div {
+                width: 400px;
+                height: 450px;
+                background-color: rgb(255, 66, 98);
+                float: left;
+                padding: 10px;
+                margin-left: 45px;
+                margin-right: 45px;
+                margin-bottom: 10px;
+
+            }
+
+            .box div img {
+                width: 100%;
+            }
+
+            .box div p {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            
+
+            .article {
+                width: 100%;
+                height: 1200px;
+                padding: 10px;
+            }
+
+            #a1 {
+                width: 100%;
+                height: 600px;
+                background-color: paleturquoise;
+                margin: 10px;
+               
+
+            }
+            #a1 p, #a1 h3{
+                text-align: justify;
+                padding: 20px;
+            }
+
+            #a2 {
+                width: 100%;
+                height: 140px;
+                background-color: blue;
+                margin: 10px;
+               
+            }
+
+            .footer {
+                display: flex;
+                width: 100%;
+                height: 50px;
+                background-color: crimson;
+                color: white;
+                padding: 10px;
+                margin-top: 20px;
+                justify-content: center;
+
+            }
+
+            .footer a {
+                background-color: white;
+                color: crimson;
+                padding: 10px;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin: 2px;
+                text-decoration: none;
+                border-radius: 12px;
+            }
+        }
+
+           /*BREAKPOINT -5*/
+
+        
+        @media(max-width: 449px){
+            h1 {
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: white;
+                background-color: crimson;
+            }
+
+            .header ul {
+
+                width: 100%;
+                height: 50px;
+                background-color: crimson;
+                color: white;
+                padding: 10px;
+                margin: 5px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                top: 0;
+                position: fixed;
+                justify-content: space-evenly;
+
+            }
+
+
+            .header ul li {
+                padding: 5px;
+                text-decoration: none;
+                list-style: none;
+                display: inline-block;
+            }
+
+            .header ul li a {
+                display: block;
+                font-size: 15px;
+                text-decoration: none;
+                padding: 5px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: white;
+                
+                
+
+            }
+
+            .header ul li a:hover {
+                color: crimson;
+                background-color: white;
+                padding: 5px;
+
+
+            }
+
+            .banner {
+                width: 100%;
+                height: 800px;
+                padding: 10px;
+                background-color: teal;
+                color: white;
+                margin: 5px;
+            }
+
+            .circle {
+                width: 100%;
+                height: 1920PX;
+                padding: 10px;
+                
+            }
+
+            .circle>div {
+                /*border: tomato 2px solid;*/
+                padding: 10px;
+                height: 450px;
+                width: 450px;
+                border-radius: 50%;
+              
+                margin-left: 45px;
+                margin-right: 45px;
+                background-color: tomato;
+                margin-top: 8px;
+                margin-bottom: 8px;
+
+            }
+            
+
+            #but1 {
+                background-color: white;
+                color: crimson;
+                padding: 10px;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin: 2px;
+                text-decoration: none;
+                border-radius: 12px;
+            }
+
+
+            .box {
+                width: 100%;
+                height: 1920PX;
+                padding: 10px;
+                justify-content: space-evenly;
+
+            }
+
+            .box>div {
+                width: 400px;
+                height: 450px;
+                background-color: rgb(255, 66, 98);
+                float: left;
+                padding: 10px;
+                margin-left: 45px;
+                margin-right: 45px;
+                margin-bottom: 10px;
+
+            }
+
+            .box div img {
+                width: 100%;
+            }
+
+            .box div p {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            
+
+            .article {
+                width: 100%;
+                height: 1200px;
+                padding: 10px;
+            }
+
+            #a1 {
+                width: 100%;
+                height: 600px;
+                background-color: paleturquoise;
+                margin: 10px;
+               
+
+            }
+            #a1 p, #a1 h3{
+                text-align: justify;
+                padding: 20px;
+            }
+
+            #a2 {
+                width: 100%;
+                height: 140px;
+                background-color: blue;
+                margin: 10px;
+               
+            }
+
+            .footer {
+                display: flex;
+                width: 100%;
+                height: 50px;
+                background-color: crimson;
+                color: white;
+                padding: 10px;
+                margin-top: 20px;
+                justify-content: center;
+
+            }
+
+            .footer a {
+                background-color: white;
+                color: crimson;
+                padding: 10px;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin: 2px;
+                text-decoration: none;
+                border-radius: 12px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--NAV BAR-->
+    <div class="header">
+        <ul>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#sec4">ABOUT US</a></li>
+            <li><a href="#sec2">TEAM</a></a></li>
+            <li><a href="#sec3">TECHNOLOGIES</a></li>
+            <li><a href="#sec5">CONTACTS</a></li>
+        </ul>
+    </div>
+<!--BANNER-->
+    <div class="banner"
+        style="background-image: url(../Images/emile-perron-xrVDYZRGdw4-unsplash.jpg); background-size: cover; background-repeat: no-repeat;">
+    </div>
+    <h1 id="sec2">TEAM</h1>
+<!--TEAM -->
+    <div class="circle">
+        <div class="circle1" style="background-image: url(../Images/1.png); background-size: cover; background-repeat: no-repeat;">
+        </div>
+        <!--backgroud repeat-taki image repeat na ho, background cover-taaaki poori image ko background pe rakh dega-->
+        <div class="circle1" style="background-image: url(../Images/2.png); background-size: cover; background-repeat: no-repeat;">
+        </div>
+        <div class="circle2"
+            style="background-image: url(../Images/3\ \(1\).png); background-size: cover; background-repeat: no-repeat;">
+        </div>
+        <div class="circle2"
+            style="background-image: url(../Images/9\ \(1\).png); background-size: cover; background-repeat: no-repeat;">
+        </div>
+
+    </div>
+    <h1 id="sec3">TECHNOLOGIES</h1>
+
+    <div class="box">
+        <div> <img src="../Images/image-18.png">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorum ducimus natus, cum eaque
+                suscipit? Inventore cupiditate voluptatibus molestiae eos?
+            </p>
+            <br>
+            <a id="but1" href="https://ashitaseth9454.github.io/FullStasckSite/start/CSS/html5.html">Read More</a>
+        </div>
+        <div> <img src="../Images/hero.png">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorum ducimus natus, cum eaque
+                suscipit? Inventore cupiditate voluptatibus molestiae eos?
+            </p> <br>
+
+            <a id="but1" href="https://ashitaseth9454.github.io/FullStasckSite/start/CSS/css3.html">Read More</a>
+        </div>
+        <div>
+            <img src="../Images/1_LyZcwuLWv2FArOumCxobpA.png">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorum ducimus natus, cum eaque
+                suscipit? Inventore cupiditate voluptatibus molestiae eos?
+            </p> <br>
+
+            <a id="but1" href="https://ashitaseth9454.github.io/FullStasckSite/start/CSS/javascript.html">Read More</a>
+        </div>
+        <div>
+            <img src="../Images/unnamed (4).jpg">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorum ducimus natus, cum eaque
+                suscipit? Inventore cupiditate voluptatibus molestiae eos?
+            </p> <br>
+
+            <a id="but1" href="https://ashitaseth9454.github.io/FullStasckSite/start/CSS/bootstrap.html">Read More</a>
+        </div>
+    </div>
+    <h1 id="sec4">ABOUT US</h1>
+
+    <div class="article">
+        <div id="a1">
+            <h3>About Us:</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo molestias dolores aliquid. Nisi facilis
+                voluptates consequatur maiores, quam consequuntur non fuga ut, ratione libero a vel harum! Et ullam eum
+                hic quos fugiat tenetur! Eum distinctio a dolorem consectetur quae nulla rerum nemo inventore est modi
+                neque laudantium repellendus eligendi soluta, ipsam eos consequuntur harum dolorum, ad debitis animi?
+                Voluptatibus optio ut cumque numquam totam eum cum necessitatibus repudiandae ducimus odit omnis,
+                tempora labore fugiat similique tempore maiores sunt sint ipsa dicta. Officia placeat aliquam itaque
+                eaque saepe laudantium quam quis dolorem sapiente asperiores atque, laboriosam et neque nihil? Officiis
+                deserunt aliquam illum veniam temporibus mollitia dignissimos modi libero ipsa odit maiores
+                perspiciatis, laborum necessitatibus! Iste mollitia non reiciendis explicabo corrupti facere laborum
+                amet magni ratione. Inventore omnis quas nobis quae ipsum accusamus autem pariatur architecto neque
+                beatae, sunt repellendus possimus et suscipit obcaecati reiciendis ut quia atque! Ab deserunt
+                dignissimos explicabo exercitationem, ex vitae a quaerat omnis ullam illum id autem minima itaque
+                recusandae aliquam minus quod iusto consequuntur. Ab, vel odio. Sed, tempora? Eius, soluta minus
+                praesentium quas autem aspernatur corrupti iusto amet illum tempore expedita odit reiciendis harum velit
+                quod cupiditate </p>
+        </div>
+        <div id="a2" style="background-image: url(../Images/p1.jpg);"></div>
+        <div id="a2" style="background-image: url(../Images/p2.jpeg);"></div>
+        <div id="a2" style="background-image: url(../Images/p3.jpg);"></div>
+
+    </div>
+    <h1 id="sec5">CONTACT US</h1>
+
+    <div class="footer"><a href="#top">Back to Top</a></div>
+
+</body>
+
+</html>
