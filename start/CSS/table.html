@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: 20px auto;/*auto se content automatically center pe*/
+            background-color: pink ;
+            width: 80%;
+        }
+        tr{
+            background-color: plum;/*kyuki saari cheesen rows hain*/
+        }
+        /*PSEUDO CLASS nTH CHILD*/
+        tr:nth-child(even){
+            background-color: rebeccapurple;/*even vaale*/
+        }
+        
+        th{/*as heading ek hi hai*/
+            background-color: salmon;
+        }
+        tr,td,table,th{
+            border-bottom: 1px solid black;/*sirf bottom main ayega*/
+            border-spacing: 10px;/*border spacing-0px se border collapse vala effect aayega*/
+            border-collapse: collapse;/*dono border merge ho jaate hain ,,, seperate main normal boreder*/
+            padding: 10px;
+            
+            
+        }
+        tr:hover{
+            background-color: white;
+        }
+        tr:first-child() th{
+            background-color: turquoise;
+            text-align: center;
+        }
+        /*tr:nth-child(1) td{
+            background-color: turquoise;
+        }
+        .red{
+            text-align: center;
+        }*/
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="red" colspan="3" >table</th>
+        </tr>
+        <tr>
+            <th>sno.</th><!--bold kardega headingsssss-->
+            <th>topic</th>
+            <th>status</th>
+           
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Intro to CSS</td>
+            <td>Status</td>
+           
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Intro to HTML</td>
+            <td>Status</td>
+           
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Intro TO javaSCRIPT</td>
+            <td>Status</td>
+           
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Intro to Bootstrap</td>
+            <td>Status</td>
+           
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Intro to php</td>
+            <td>Status</td>
+           
+        </tr>
+       
+       
+    </table>
+</body>
+</html>
