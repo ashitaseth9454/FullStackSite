@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            background-color:khaki
+        }
+        .header{
+            color:brown;
+            font-size: 60px;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;/*will make page resposnsive*/
+            justify-content: center;
+            
+
+        }
+        .template1, .template2, .template3{
+            width: 300px;
+            height: 350px;
+            background-color:white;
+            margin-left: 20px;
+            margin-bottom: 20px;
+           
+
+
+        }
+        .login1{
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to right, orange,red);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           padding-bottom: 15px;
+        }
+        .login1 h1{
+            color:white;
+            font-size: 30px;
+        }
+        .login1 i{
+            color: white;
+            font-size: 20px;
+            padding-right: 7px;
+        }
+        .main1{
+            padding: 20px;
+
+
+        }
+        input[type='email']{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid orange;
+            padding: 10px 0px;
+            width: 100%;
+        }
+        input[type='password']{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid orange;
+            padding: 10px 0px;
+            width: 100%;
+        }
+        .main1 p{
+            text-align: right;
+            color: blue;
+            font-size: 12px;
+            padding-top: 5px;
+
+        }
+        input[type='submit']{
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: white;
+            background-color: darkgrey;
+           
+
+            
+        }
+        #p1{
+            display: inline-block;
+            font-size: 10px;
+            margin-left: 30px;
+
+        }
+        .main1 p b{
+            color: darkblue;
+        }
+        .login2 h1{
+            justify-content: center;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1  class="header"> Form Template</h1>
+    <div class="main">
+        <!--TEMPLATE 1-->
+        <div class="template1">
+            <div class="login1">
+                <h1>LOGIN</h1>
+            
+            <div class="social">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google"></i>
+            </div>
+        </div>
+        <div class="main1">
+            <div>
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail ID">
+        </div>
+        <div>
+            <input type="password" name="pwd" id="pwd" placeholder="Enter Password">
+        </div>
+        <p>Forgot <b>Password?</b></p>
+        <input type="submit" value="LOGIN">
+        <p id="p1">Don't have an account? <b>Sign Up.</b></p>
+        </div>
+        </div>
+
+
+         <!--TEMPLATE 2-->
+
+        <div class="template2">
+            <div class="login2">
+                <h1>SIGNUP</h1>
+        </div>
+        <div class="main2">
+            <div>
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail ID">
+        </div>
+        <div>
+            <input type="password" name="pwd" id="pwd" placeholder="Enter Password">
+        </div>
+        <div><input type="checkbox" name="chk" id="chk">
+        <p id="p2">Accept the <b>Terms & conditions </b></p>
+        </div>
+        <div>
+        
+        <input type="submit" value="LOGIN">
+        
+        <p id="p3">Have an account? <b>Sign in </b></p>
+        </div>
+        <div class="socialnet1">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google"></i>
+        </div>
+        </div>
+        </div>
+
+
+         <!--TEMPLATE 2-->
+
+        <div class="template3">
+            <div class="login3">
+                <h1>SIGNUP</h1>
+            
+            
+        </div>
+        <div class="main3">
+            <div>
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail ID">
+        </div>
+        <div>
+            <input type="password" name="pwd" id="pwd" placeholder="Enter Password">
+        </div>
+        <p>Forgot <b>Password?</b></p>
+        <input type="submit" value="LOGIN">
+        <p id="p2">Don't have an account? <b>Sign Up.</b></p>
+        <div class="socialnet">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google"></i>
+
+        </div>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
