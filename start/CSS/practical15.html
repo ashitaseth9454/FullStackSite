@@ -58,11 +58,13 @@ button:disabled{
             decrease.disabled=true;
         }
         decrease.onclick=function(){
+            counter=counter-1;
             if(counter===0 || counter <0){
                 decrease.disabled=true;
+                document.getElementById('count').innerHTML=counter;
             }
             else{
-                counter=counter-1;
+               
                 document.getElementById('count').innerHTML=counter;
             }
 
