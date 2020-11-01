@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="alert('String')">Click Me</button><!--Calling Alert Dialog Box-->
+    <!-- Sirf ek baar single them ek baar double quote , dono baar baar use nhi kr skte nhi to error-->
+    <button id="btn" onclick="hello()">Click Me to tell </button>
+    <script>
+        function hello(){
+          var x=10;
+           var y=30;
+           // alert("the sum is "+ (x+y));
+
+           var opt= confirm('Do you want the sum');
+           console.log(opt)/*agar ok pe click kiya to opt = true, while agar cancel kiya to opt= false*/
+           if(opt){
+            alert("the sum is "+ (x+y));
+           }
+           else{
+               alert("sorry you said no")
+           }
+
+           var name =prompt('enter full name');
+           console.log(name);
+           if(name.length>0 && name!="null"){
+               alert('Welcome '+name);
+
+           }
+           else{
+               alert("Welcome Anonymous");
+           }
+           var a= prompt("enter num 1");
+           var b =prompt("enter num 2")
+           alert(a+b);
+           if(a+b>50){
+               alert("sum "+(a+b));
+           }
+           else{
+               alert("sum is less than 50")
+           }
+        }
+    </script>
+<!--CONFIRM DIALOG BOX-->
+        <!-- can acceot or cancel while alrt main sirf ok hot ahai option-->
+
+
+        <!--prompt jo data glti se reh gay auske liye  jaise form bharn p ekuch bhool gay eth eiske through pooch skte hain-->
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Inline Binding-->
+<button onclick="hello()">Call me</button>
+<script>
+    function hello(){
+        alert("function hai bhai")
+    }
+</script>
+
+<!--another method for function binding-->
+<button id="btn">Call me doosre tarah se</button>
+<script>
+    var x =document.getElementById("btn");
+    x.onclick= function(){
+        alert("function alag tareeke se hai bhai")
+    }
+    x.onpointerover=function(){
+        alert("hover")//hover hote hi alert aayega   
+    }
+</script>
+    <script src="./function.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.main{
+    text-align: center;
+
+}
+h1{
+    color: white;
+    background-color: tomato;
+
+}
+#neg,#pos{
+    font-size: 40px;
+    margin: 30px;
+    padding: 10px;
+    
+}
+button{
+    outline: none;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    
+}
+button:disabled{
+    background-color: grey;
+
+}
+#count{
+    display: inline-block;
+    font-size: 40px;
+}
+
+
+</style>
+<body>
+    <div class="main">
+        <h1>COUNTER</h1>
+
+        <button id="neg">-</button>
+        <p id="count">0</p>
+        <button id='pos'>+</button>
+        
+        
+    </div>
+    <script>
+        var counter=0;
+        var decrease=document.getElementById('neg');
+        var increase= document.getElementById('pos');
+        if(counter===0){
+            decrease.disabled=true;
+        }
+        decrease.onclick=function(){
+            if(counter===0 || counter <0){
+                decrease.disabled=true;
+            }
+            else{
+                counter=counter-1;
+                document.getElementById('count').innerHTML=counter;
+            }
+
+
+        };
+        increase.onclick=function(){
+            counter=counter+1;
+            document.getElementById('count').innerHTML=counter;
+            if(counter>=1){
+                decrease.disabled=false;
+
+            }
+
+        };
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+            margin: 40px auto;
+        }
+        button{
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    </div>
+<!--HTML attribute Handler-->
+   
+    <!--<button onclick="changecolor()">Click Me</button>
+    --><!--DOM level 1-->
+<button>Click Me</button>
+
+<script>
+    function changecolor(){
+      var x=  document.getElementById('container');
+      x.style.backgroundColor='violet';
+    }
+    //DOM level 1
+    var btn= document.querySelector('button');//first handler
+    btn.onclick=changecolor;//onclick is hava script event handler
+
+    btn.onclick=function(){
+        document.body.style.background='pink';//2nd hadler
+    }//DOM level 1 se ek handler chalehaga second vala anhai chalega , sirf blast vala event handle kar skta hai baaki ke nhai chalenge
+
+
+
+    //DOm level 2 event handler 
+    //kitne bhi even handle kR skt ahai ye(addEventlistener)
+
+    var box =document.getElementById('container');
+//mouse over is pehla event
+    box.addEventListener("mouseover",abc);//first handler
+    box.addEventListener("mouseover",xyz);//second handler
+    box.addEventListener("mouseout",function(){//next event isme bi multiple listeners add kar skte , ye mouseout hai doosra event
+        this.style.border="none";//thi ski jagah box hi kar skte hain
+        this.style.borderRadius="0px";
+        this.style.backgroundColor="pink";
+    })//anonymous function koi name nahi bas uske andar hi call
+    function abc(){
+        box.style.border="10px solid yellow";
+    }
+    function xyz(){
+        box.style.borderRadius="50px";
+        box.style.backgroundColor="red";
+    }
+    box.removeEventListener("mouseover",xyz)//mouse out main anonymous function call kiya hai to isko hat anahi skte hain
+    
+</script>
+
+
+</body>
+</html>
