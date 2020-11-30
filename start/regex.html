@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p> Welcome to the session on Regular Expression</p>
+    <button onclick="myFunc()">Click Me</button>
+    <p id="demo">
+
+    </p>
+    <script>
+        function myFunc(){
+            var str="Welcome to Beta-Labs to learn JavaScript";
+            var pattern = /to/g;
+            //g global pattern
+            //
+            //
+            var res = str.match(pattern);
+            document.getElementById("demo").innerHTML=res;
+        }
+    </script>
+</body>
+</html>
